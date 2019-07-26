@@ -13,7 +13,7 @@ attr_accessor :current_player, :status, :board
 
 	def initialize
 #TO DO : créé 2 joueurs, créé un board, met le status à "on going", défini un current_player	
-	puts "ENTREZ VOS NOMS BANDE DE BA....."
+	puts "Veuillez entrer les noms des joueurs"
 	player1 = Player.new(@nom, "x")
 	player2 = Player.new(@nom, "o")
 	@player = [player1, player2]
@@ -37,7 +37,7 @@ attr_accessor :current_player, :status, :board
 
 	def game_end
 # TO DO : permet l'affichage de fin de partie quand un vainqueur est détecté ou si il y a match nul 
-	puts "le vainceur est #{@status}" if @status = @current_player
-	puts "c'est un magnifique NUUUUUUUUUL" if @status == "nul"
+	puts "le vainqueur est #{@status}" if @status = @current_player
+	puts "c'est un match nul" if @status == "nul"
 	end    
 end
