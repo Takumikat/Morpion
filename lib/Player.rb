@@ -18,4 +18,4 @@ class Player
 
 end 
 
-puts "What the fuck Felix ?"
+puts "End of the file"
